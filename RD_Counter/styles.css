@@ -1,0 +1,84 @@
+* {
+
+}
+
+body{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    gap: 12px;
+}
+
+.data{
+    background-color: rgb(201, 198, 198);
+    color: black;
+    border: 0px;
+    text-align: left;
+}
+
+.firstElement{
+    width: 20%;
+}
+
+.secondElement{
+    width: 60%;
+    padding-left: 20px;
+}
+
+.thirdElement{
+    width: 20%;
+    padding-left: 20px;
+}
+
+.focus{
+    font-weight: bold;
+    background-color: rgb(0,30,0);
+    color: white;
+}
+
+.left {
+
+    width: 40%;
+    float: left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.right-top{
+    display: flex;
+}
+
+.right-down{
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+a {
+    border: 1px;
+    border-style: solid;
+    padding: 0px;
+}
+
+.clickable{
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickable:hover{
+    background-color: lightgray;
+}

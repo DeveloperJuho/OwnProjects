@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ring Dominance Pick Counter</title>
+    <style>
+
+    </style>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+
+    <h1 class="main">Ring Dominance Pick Counter</h1>
+    <!-- Content area -->
+    <div class="content">
+      <!-- For showing the statistics-->
+      <div class="left">
+          <h2>Left Side</h2>
+          <table class="data">
+              <thead>
+                  <tr>
+                      <th class="firstElement">Remaining</th>
+                      <th class="secondElement">Picks to find</th>
+                      <th class="thirdelement" style="visibility: hidden">Chance</th>
+                  </tr>
+              </thead>
+          </table>
+      </div>
+      <!-- For showing the controls-->
+      <div class="right">
+        <div class="right-top">
+          <a class="clickable focus">Linear</a>
+          <a class="clickable">Progressive</a>
+        </div>
+        <div class="right-down">
+          <h2>Right side</h2>
+          <label>Chance:</label>
+          <input class="chance">
+          <button class="chanceButton">Calculate</button>
+        </div>
+          
+      </div>
+    </div>
+  </body>
+</html>
