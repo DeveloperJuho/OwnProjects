@@ -1,13 +1,9 @@
-* {
-
-}
-
 body{
     width: 500px;
     display: flex;
     flex-direction: column;
 }
-
+ 
 .main {
     width: 100%;
 }
@@ -15,6 +11,14 @@ body{
 .content{
     display: flex;
     gap: 12px;
+}
+
+/*/ Left side /*/
+
+.left {
+
+    width: 40%;
+    float: left;
 }
 
 .data{
@@ -38,17 +42,7 @@ body{
     padding-left: 20px;
 }
 
-.focus{
-    font-weight: bold;
-    background-color: rgb(0,30,0);
-    color: white;
-}
-
-.left {
-
-    width: 40%;
-    float: left;
-}
+/*/ Right side /*/
 
 .right {
     display: flex;
@@ -81,4 +75,14 @@ a {
 
 .clickable:hover{
     background-color: lightgray;
+}
+
+.focus{
+    font-weight: bold;
+    background-color: rgb(0,30,0);
+    color: white;
+}
+
+.chanceButton{
+    margin-top: 10px;
 }
