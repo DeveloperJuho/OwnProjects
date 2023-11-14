@@ -1,0 +1,16 @@
+table, tr {
+    border-style: solid;
+    font-size: 50px;
+    text-align: center;
+    column-width: 90px;
+}
+
+th {
+    border-style: solid;
+    font-size: 70px;
+    width: 90px;
+}
+
+body {
+    font-size: 32px;
+}

@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <table id="firstTable">
+            <tr>
+                <th>B</th>
+                <th>I</th>
+                <th>N</th>
+                <th>G</th>
+                <th>O</th>
+            </tr>
+        </table>
+        <br>
+        <table id="secondTable">
+            <tr>
+                <th>B</th>
+                <th>I</th>
+                <th>N</th>
+                <th>G</th>
+                <th>O</th>
+            </tr>
+        </table>
+        <br>
+        <table id="thirdTable">
+            <tr>
+                <th>B</th>
+                <th>I</th>
+                <th>N</th>
+                <th>G</th>
+                <th>O</th>
+            </tr>
+        </table>
+    </body>
+</html>
+<!-- Number generation and putting numbers to places-->
+<script>
+let arrayB = [];
+let arrayI = [];
+let arrayN = [];
+let arrayG = [];
+let arrayO = [];
+
+// Fill arrays
+console.log(arrayB);
+for(let a = 1; a <= 15; a++){
+    arrayB.push(a);
+}
+
+for(let a = 16; a <= 30; a++){
+    arrayI.push(a);
+}
+
+for(let a = 31; a <= 45; a++){
+    arrayN.push(a);
+}
+
+for(let a = 46; a <= 60; a++){
+    arrayG.push(a);
+}
+
+for(let a = 61; a <= 75; a++){
+    arrayO.push(a);
+}
+
+// Randomize arrays
+arrayB.sort(() => Math.random()- 0.5)
+arrayI.sort(() => Math.random()- 0.5)
+arrayN.sort(() => Math.random()- 0.5)
+arrayG.sort(() => Math.random()- 0.5)
+arrayO.sort(() => Math.random()- 0.5)
+
+
+
+console.log(arrayB);
+console.log(arrayI);
+console.log(arrayN);
+console.log(arrayG);
+console.log(arrayO);
+
+for (let i = 0; i < 5; i++){
+    $('#firstTable').append(
+    '<tr>' +
+    '<th>' + arrayB[i] + '</th>' +
+    '<th>' + arrayI[i] + '</th>' +
+    '<th>' + arrayN[i] + '</th>' +
+    '<th>' + arrayG[i] + '</th>' +
+    '<th>' + arrayO[i] + '</th>' +
+    '</tr>'
+)
+}
+
+for (let i = 5; i < 10; i++){
+    $('#secondTable').append(
+    '<tr>' +
+    '<th>' + arrayB[i] + '</th>' +
+    '<th>' + arrayI[i] + '</th>' +
+    '<th>' + arrayN[i] + '</th>' +
+    '<th>' + arrayG[i] + '</th>' +
+    '<th>' + arrayO[i] + '</th>' +
+    '</tr>'
+)
+}
+
+for (let i = 10; i < 15; i++){
+    $('#thirdTable').append(
+    '<tr>' +
+    '<th>' + arrayB[i] + '</th>' +
+    '<th>' + arrayI[i] + '</th>' +
+    '<th>' + arrayN[i] + '</th>' +
+    '<th>' + arrayG[i] + '</th>' +
+    '<th>' + arrayO[i] + '</th>' +
+    '</tr>'
+)
+}
+
+
+
+</script>
