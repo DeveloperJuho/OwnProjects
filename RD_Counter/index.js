@@ -23,8 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
     valueData = valueField.value;
     rightSideData = document.querySelector(".right");
     chanceButton = document.querySelector(".chanceButton");
+    linearCalc = document.querySelector("#linearCalc");
+    progCalc = document.querySelector("#progCalc");
 
     chanceButton.addEventListener("click", linear);
+
+    linearCalc.addEventListener("click", changeCalc);
+    progCalc.addEventListener("click", changeCalc);
 
     console.log(valueData);
 });
@@ -213,3 +218,21 @@ function progressiveCalculation(){
     pickData.length = 0;
 
 }
+
+// Function to change calculation style
+
+const changeCalc = ((event) => {
+    console.log(event.srcElement.classList);
+    // If active, do nothing
+
+    for(let i = 0; i < event.srcElement.classList.length; i++){
+        if(event.srcElement.classList[i] == "focus"){
+            return "nothing changed";
+        }
+    }
+    // If not active, switch other to non-active
+    const otherElement = document.querySelector(".focus");
+    otherElement.classList.remove("focus");
+    // Activate other
+    event.srcElement.classList.add("focus");
+});
